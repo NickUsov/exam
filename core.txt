@@ -1,0 +1,38 @@
+Entities:
+category:
+{
+    id,
+    title,
+}
+factorier:
+{
+    id,
+    title
+}
+post:
+{
+    id,
+    model,
+    category_id,
+    factorier_id,
+    comment_id(nullable),
+    description,
+    path,
+    status
+}
+comment:
+{
+    id,
+    post_id,
+    user_id,
+    content
+}
+user:
+{
+    id,
+    name,
+    email,
+    password,
+    status,
+    is_admin
+}
